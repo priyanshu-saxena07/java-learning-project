@@ -11,7 +11,7 @@ public class Function {
     }
 
     public static void main(String[] args) {
-        checkEvenOdd(6);
+        checkEvenOdd(3);
     }
 }
 
