@@ -1,14 +1,18 @@
 package Basic;
 
 public class Function {
-    public static void  add(int a, int b) {
-        System.out.println(a + b);
+
+    public static void checkEvenOdd(int num) {
+        if (num % 2 == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
     }
 
     public static void main(String[] args) {
-         add(5, 10);
+        checkEvenOdd(6);
     }
-
 }
 
 
@@ -18,11 +22,3 @@ public class Function {
 //✔    return ends the function
 //✔   Function runs only when called
 
-//          public class Function {
-//    public static void  add(int a, int b) {
-//        System.out.println(a + b);
-//    }
-//
-//    public static void main(String[] args) {
-//         add(5, 10);
-//    }
