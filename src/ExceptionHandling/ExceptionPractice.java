@@ -1,34 +1,33 @@
 package ExceptionHandling;
 
+import java.util.Scanner;
+
 public class ExceptionPractice {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 0;
-//        int result = a / b;
+
 
         try {
-            int result = a / b;
-        } catch (ArithmeticException e) {
-            System.out.println("Cannot divide by zero");
-        }
-
-        int a2 = 10;
-        int b2 = 0;
-        int[] arr = {1, 2, 3};
-        try {
-            System.out.println(a / b);
-            System.out.println(args[5]);
+            int[] arr = {10,20,30};
+            System.out.println(arr[4]);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Array Error");
-        } catch (ArithmeticException e) {
-            System.out.println("for divide by zero");
+            System.out.println("Exception");
+        } finally {
+            System.out.println("I always run anyway");
         }
-
-
-
-
-
-
 
     }
 }
+
+
+
+
+
+//  Q2. Array Exception
+//Create array of size 5
+//Ask user for index
+//Print element
+//
+//Handle:
+//
+//Invalid index
+//Wrong input type
