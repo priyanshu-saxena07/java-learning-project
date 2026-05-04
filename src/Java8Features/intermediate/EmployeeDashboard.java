@@ -23,24 +23,37 @@ class Employee {
 
 public class EmployeeDashboard {
     public static void main(String[] args) {
-    List<Employee> employees = Arrays.asList(
+    List<Employee>  list = Arrays.asList(
          new Employee(1,"Priyanka",80000),
          new Employee(2,"Ravi",120000),
          new Employee(3,"Avni", 50000),
          new Employee(4,"Pooja", 45000)
     );
 
-        Optional<Employee> maxEmp =
-                employees.stream()
-                        .max(Comparator.comparing(Employee::getSalary));
-        System.out.println("Name: " + maxEmp.get().getName());
-        System.out.println("Salary: " + maxEmp.get().getSalary());
+        Employee maxEmp = list.stream()
+                .max(Comparator.comparing(Employee::getSalary))
+                .orElseThrow();
+
+          list.stream()
+                  .filter(e -> e.getName().startsWith("P")
+                          || e.getName().startsWith("A"))
+                  .forEach(e -> System.out.println(e.getName()));
+
+
+
+        System.out.println("Name: " + maxEmp.getName() + " salary: " + maxEmp.getSalary());
+
 
 
 
     }
 }
 
+//      long count = list.stream()
+//    .filter(e -> e.getSalary() > 50000)
+//    .count();
+//
+//System.out.println("Count: " + count);
 
 //List<Employee> employees = Arrays.asList(
 //        new Employee(1, "Amit", 50000),
