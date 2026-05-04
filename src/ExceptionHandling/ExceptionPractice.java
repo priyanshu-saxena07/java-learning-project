@@ -1,19 +1,19 @@
 package ExceptionHandling;
 
-import java.util.Scanner;
-
 public class ExceptionPractice {
     public static void main(String[] args) {
 
 
         try {
-            int[] arr = {10,20,30};
-            System.out.println(arr[4]);
+            int[] arr = {5, 8 ,9, 7};
+            System.out.println(arr[2]);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Exception");
+            System.out.println("Invalid index: " + e.getMessage());
         } finally {
-            System.out.println("I always run anyway");
+            System.out.println("Program finished execution");
         }
+
+
 
     }
 }
