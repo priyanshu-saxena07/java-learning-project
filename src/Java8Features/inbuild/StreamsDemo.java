@@ -2,28 +2,35 @@ package Java8Features.inbuild;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+class Person{
+    String name;
+    int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
 
 public class StreamsDemo {
     public static void main(String[] args) {
-        List<String> items = Arrays.asList("Apple", "banana", "Cherry");
-        for (String fruit : items)
-            System.out.println(fruit);
 
-        // Using Streams
-        Stream<String> stream = items.stream();
-//        stream.forEach(System.out::println);
-        stream.forEach((item) -> System.out.println());
+        List<Person> list = Arrays.asList(
+                new Person("Priyanshu",23),
+                new Person("Avni",22)
+        );
 
-        System.out.println("filter fruits");
-//        Stream<String> streamNew = items.stream();
-//        Stream<String> filteredStream
-//                = streamNew.filter(name -> name.startsWith("c"));
-//        filteredStream.forEach(System.out::println);
+       List<String> names = list.stream()
+               .map(Person::getName)
+               .collect(Collectors.toList());
 
-        items.stream()
-                .filter(name -> name.startsWith("B"))
-                .forEach(System.out::println);
-
+        System.out.println(names);
     }
 }
