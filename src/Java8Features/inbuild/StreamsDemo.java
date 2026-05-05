@@ -3,7 +3,6 @@ package Java8Features.inbuild;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 class Person{
     String name;
@@ -24,11 +23,16 @@ public class StreamsDemo {
 
         List<Person> list = Arrays.asList(
                 new Person("Priyanshu",23),
-                new Person("Avni",22)
+                new Person("Avni",22),
+                new Person("Amit",28),
+                new Person("Neha",30),
+                new Person("Aalok",32)
         );
 
        List<String> names = list.stream()
+               .filter(p -> p.age > 22)
                .map(Person::getName)
+               .sorted()
                .collect(Collectors.toList());
 
         System.out.println(names);
