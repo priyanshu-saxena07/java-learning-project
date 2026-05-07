@@ -10,7 +10,7 @@ public class MapDemo {
         userMap.put(2, "Bob");
         userMap.put(3, "Charlie");
 
-        System.out.println("User with id 2; " + userMap);
+        System.out.println("User with id 2; " + userMap.get(2));
 
         System.out.println("All Users");
         for (Map.Entry<Integer, String> entry : userMap.entrySet()) {
