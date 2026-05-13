@@ -1,0 +1,37 @@
+package DSA.Arrays.String;
+
+import java.util.Arrays;
+
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        if (strs == null || strs.length == 0) {
+            return "";
+        }
+        Arrays.sort(strs);
+
+        String first = strs[0];
+        String last = strs[strs.length - 1];
+        StringBuilder ans = new StringBuilder();
+
+        for (int i = 0; i < Math.min(first.length(), last.length()); i++) {
+            if (first.charAt(i) != last.charAt(i)) {
+                return ans.toString();
+            }
+            ans.append(first.charAt(i));
+        }
+
+        return ans.toString();
+    }
+}
+
+public class LongestCommonPrefix {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        String[] input = {"flower", "flow", "flight"};
+
+        String result = solution.longestCommonPrefix(input);
+
+        System.out.println("Longest Common Prefix: " + result);
+
+    }
+}
