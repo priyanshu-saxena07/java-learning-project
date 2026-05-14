@@ -6,7 +6,12 @@ public class Vehicle {
 
     public Vehicle(String brand, int speed) {
         this.brand = brand;
-        this.speed = speed;
+
+         if (speed < 0) {
+             this.speed = 0;
+         } else {
+             this.speed = speed;
+         }
     }
 
 
@@ -27,10 +32,14 @@ public class Vehicle {
     }
 
     public void setSpeed(int speed) {
-        this.speed = speed;
+         if (speed < 0) {
+             this.speed = 0;
+         } else {
+             this.speed = speed;
+         }
     }
     public void displayInfo() {
-        System.out.println("brand: " + brand + ", Speed: " + speed + 100);
+        System.out.println("brand: " + brand + ", Speed: " + speed);
     }
 
 }
