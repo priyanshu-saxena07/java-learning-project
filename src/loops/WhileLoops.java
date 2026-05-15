@@ -4,21 +4,17 @@ import java.util.Scanner;
 
 public class WhileLoops {
     public static void main(String[] args) {
-//      // for loop
-//        for (int i = 0; i < 10; i++) {
-//            System.out.println("Countdown: " + i);
-//        }
-        // while loop
-        int i = 1;
-        while(i <= 30) {
-            if (i % 2 != 0) {
-                i++;
-                continue;
-            }
-            System.out.println(i);
-            i++;
-        }
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int  num = sc.nextInt();
+
+        System.out.println("Enter second  number: ");
+        int num1 = sc.nextInt();
+
+        int sum = num + num1;
+        System.out.println("Sum: " + sum);
 
     }
 }
