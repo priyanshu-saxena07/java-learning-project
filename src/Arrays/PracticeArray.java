@@ -3,27 +3,18 @@ package Arrays;
 public class PracticeArray {
     public static void main(String[] args) {
 
-        int[] arr = {10, 25, 3, 99, 8};
+        int[] arr = {1,2,3,4,5,6,7};
 
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
+        int sum = 0;
 
-        for (int i = 0; i < arr.length; i++) {
-
-            if (arr[i] > largest) {
-                secondLargest = largest;
-                largest = arr[i];
-            }
-            else if (arr[i] > secondLargest && arr[i] != largest) {
-                secondLargest = arr[i];
-            }
+        for (int num : arr) {
+            sum += num;
         }
+        double average = (double) sum / arr.length;
+        System.out.println("Average = " + average);
 
-        System.out.println("Second Largest: " + secondLargest);
-
-        }
-
-        }
+    }
+}
 
 
 
