@@ -1,8 +1,8 @@
 package Java8Features.inbuild;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 class Person{
     String name;
@@ -16,25 +16,38 @@ class Person{
     public String getName() {
         return name;
     }
+
+    public int getAge() {
+        return age;
+    }
 }
 
 public class StreamsDemo {
     public static void main(String[] args) {
 
         List<Person> list = Arrays.asList(
-                new Person("Priyanshu",23),
+                new Person("Priyanka",23),
                 new Person("Avni",22),
                 new Person("Amit",28),
                 new Person("Neha",30),
-                new Person("Aalok",32)
+                new Person("Alok",32)
         );
 
-       List<String> names = list.stream()
-               .filter(p -> p.age > 22)
-               .map(Person::getName)
-               .sorted()
-               .collect(Collectors.toList());
+        Person maxPerson = list.stream()
+                .max(Comparator.comparing(Person::getAge))
+                .orElse(null);
 
-        System.out.println(names);
+
+        System.out.println("Oldest Person Name: " + maxPerson.getName());
+        System.out.println("Oldest Person Age: " + maxPerson.getAge());
+
+
+
+
+
+
+
     }
 }
+
+
