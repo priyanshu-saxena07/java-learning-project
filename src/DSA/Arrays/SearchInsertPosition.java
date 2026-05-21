@@ -22,7 +22,7 @@ public class SearchInsertPosition {
 
     public static void main(String[] args) {
         int[] nums = {1, 3, 5, 6};
-        int target = 2;
+        int target = 5;
 
         int result =  searchInsertn(nums, target);
         System.out.println("Result: " + result);
