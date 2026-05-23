@@ -1,35 +1,33 @@
 package Basic;
 
+import java.util.Scanner;
+
 public class ControlFlow {
     public static void main(String[] args) {
-        int age = 17;
-        if (age > 18) {
-            System.out.println("Welcome to bank");
-        } else {
-            System.out.println("try again when ypu turn 18");
-        }
+        Scanner scanner = new Scanner(System.in);
 
-        // if -else ladder
-        int marks = 70;
-        if (marks > 90) {
-            System.out.println("Grade A+ ");
-        } else if (marks > 80) {
-            System.out.println("Grade A");
-        }else if (marks > 75) {
-            System.out.println("Grade B");
-        } else {
-            System.out.println("Grade F");
-        }
-        // switch
-        String day = "Saturday";
-        switch (day) {
-            case "Monday" -> System.out.println("Start of the Week");
-            case "Tusday" -> System.out.println("Working day");
-            case "Friday" -> System.out.println("Enjoy your Weekend");
-            case "Saturday" -> System.out.println("Weekend");
-            case "Sunday" -> System.out.println("Aram karo");
-            default -> System.out.println("holiday");
-        }
+        System.out.print("Enter age: ");
+        int age = scanner.nextInt();
+        System.out.println(age >= 18 ? "Welcome to bank" : "Try again when you turn 18");
+
+        System.out.print("Enter marks: ");
+        int marks = scanner.nextInt();
+        String grade = (marks > 90) ? "Grade A+" :
+                (marks > 80) ? "Grade A"  :
+                        (marks > 75) ? "Grade B"  : "Grade F";
+        System.out.println(grade);
+
+        System.out.print("Enter day: ");
+        String day = scanner.next();
+        System.out.println(switch (day) {
+            case "Monday" -> "Start of the Week";
+            case "Tuesday", "Wednesday", "Thursday" -> "Working day";
+            case "Friday" -> "Enjoy your Weekend";
+            case "Saturday", "Sunday" -> "Weekend / Aram karo";
+            default -> "Invalid day";
+        });
+
+        scanner.close();
     }
 }
-//  Initial commit - Java basics practice
+
