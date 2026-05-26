@@ -1,42 +1,30 @@
 package Collections;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collections;
 
-class Car{
-    String brand;
-    Car (String brand){
-        this.brand = brand;
-    }
-}
 
 public class ListDemo {
     public static void main(String[] args) {
-    List<String> users = new ArrayList();
-     users.add("Priyanshu");
-     users.add("Anamika");
-     users.add("Avni");
-     users.add("Madhav");
-//     users.add(1);
 
-        System.out.println("All Users");
-        for (String user : users) {
-            System.out.println(user);
-        }
+        ArrayList<Integer> list = new ArrayList<>();
 
-        System.out.println("Element using index: " + users.get(2));
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(60);
+        list.add(40);
+
+        list.remove(1);
+        System.out.println(list.contains(400));
+        list.add(66);
+        System.out.println(list);
+
+        Collections.sort(list);
+        System.out.println(list);
 
 
-        // List of objects
-        Car car1 = new Car("kia");
-        Car car2 = new Car("Mahindra");
-        List<Car> carList = new ArrayList<>();
-        carList.add(car1);
-        carList.add(car2);
 
-        System.out.println("All  Cars");
-        for (Car car : carList) {
-            System.out.println(car.brand);
-        }
     }
 }
+
