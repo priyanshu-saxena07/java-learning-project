@@ -1,17 +1,27 @@
 package String;
 
+import java.util.Scanner;
+
 public class StringPractice {
     public static void main(String[] args) {
 
-       String s = "Hello";
+        String original = "LeetCode";
 
-        System.out.println("String ke total length ha: " + s.length());
 
-        for (int i = s.length() - 1; i >= 0; i--) {
-            char ch = s.charAt(i);
-            System.out.println("index " + i + "par character ha " + ch);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ek string enter karein: ");
+        String user_input = scanner.nextLine();
+
+        if (original.equalsIgnoreCase(user_input)) {
+            System.out.println("Match ho gya");
+        } else {
+            System.out.println("Match nhi hua");
         }
+
+        scanner.close();
+
 
 
     }
 }
+
