@@ -1,17 +1,19 @@
 package ExceptionHandling;
 
 public class ExceptionPractice {
+    @SuppressWarnings("DataFlowIssue")
     public static void main(String[] args) {
 
 
+        String text = null;
+
         try {
-            int[] arr = {5, 8 ,9, 7};
-            System.out.println(arr[2]);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Invalid index: " + e.getMessage());
-        } finally {
-            System.out.println("Program finished execution");
+            System.out.println(text.toUpperCase());
+            System.out.println("Program finished successfully!");
+        } catch (NullPointerException e) {
+            System.out.println("Error: Object is null!");
         }
+
 
 
 
