@@ -12,26 +12,33 @@ public class IteratingDemo {
         users.add("Charlie");
         users.add("John");
 
-        // for each
-        System.out.println("USING FOR EACH");
-        for (String user : users)
+        // 1. For-each loop
+        System.out.println("USING FOR EACH:");
+        for (String user : users) {
             System.out.println(user);
-
-        // FOR LOOP
-        System.out.println("USING FOR LOOP");
-        for (int i = 0; i < users.size(); i++) {
-            System.out.println(users.get(i));
         }
-        // ITERATOR
-        System.out.println("USING ITERATOR");
+
+        // 2. Standard For loop
+        System.out.println("\nUSING FOR LOOP:");
+        for (String user : users) {
+            System.out.println(user);
+        }
+
+        // 3. Iterator (Safe for removing elements)
+        System.out.println("\nUSING ITERATOR (Removing 'Alice'):");
         Iterator<String> it = users.iterator();
         while (it.hasNext()) {
-            System.out.println(it.next());
-            if (it.next().equals("Alice"));
-            it.remove();
-        }
-        System.out.println("USING FOR EACH");
-        for (String user : users)
+            String user = it.next();
             System.out.println(user);
+
+            if (user.equals("Alice")) {
+                it.remove();
+            }
+        }
+
+        // 4. Modern Java Lambda / Method Reference
+        System.out.println("\nUSING LAMBDA / METHOD REFERENCE:");
+        users.forEach(System.out::println);
+
     }
 }
