@@ -1,19 +1,33 @@
 package String;
 
 public class ReverseString {
-    public static void main(String[] args) {
 
-        String s = "Chandausi";
-        StringBuilder reversed = new StringBuilder();
+    public static  String reverseString(String str) {
 
+        char[] ch = str.toCharArray();
+        int start = 0;
+        int end = str.length() - 1;
 
-        for (int i = s.length() -1; i >= 0; i--) {
-            reversed.append(s.charAt(i));
+        while (start < end) {
+            char temp = ch[start];
+            ch[start] = ch[end];
+            ch[end] = temp;
+            start++;
+            end--;
         }
 
+        return new String(ch);
 
-        System.out.println("Reverse String: " + reversed);
+    }
 
+    public static void main(String[] args) {
+
+        String input = "Priyanshu";
+
+        String result = reverseString(input);
+
+
+        System.out.println("Reversed: " + result);
 
 
     }
