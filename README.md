@@ -20,9 +20,10 @@ my commitment to becoming a skilled Software Developer.
 
 ## 📌 About This Project
 
-I started this repository to practice Java consistently and track my daily progress. 
-Originally, I built the foundation of this project by following a structured YouTube playlist, 
-which helped me kickstart my technical journey.
+I established this repository to build an unshakeable foundation in software engineering through 
+disciplined, daily coding practice. While I initially leveraged structured technical roadmaps and 
+community tutorials to guide my learning path, every single
+implementation here is coded independently from scratch.
 
 Now, I use this repo as my personal playground where I daily practice everything from 
 Java Basics to Java 8 features. Coming from a non-technical background, I am fully focused on 
