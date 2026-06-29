@@ -5,25 +5,28 @@ import java.util.Scanner;
 public class LearnLoops {
     public static void main(String[] args) {
 
-//        int[] arr = {4, 7, 10, 13, 18, 21};
-//         for (int num : arr){
-//             if (num % 2 != 0) {
-//                 continue;
-//             }
-//            if (num == 13)break;
-//             System.out.println(num);
-//        }
+        Scanner scanner = new Scanner(System.in);
+        int number;
 
-        int[] arr = {2, 5, 8, 11, 14};
+        System.out.println("--- Positive Number Collector ---");
+        System.out.println("Enter numbers (Enter a negative number to stop):");
 
-        for(int i = 0; i < arr.length; i++) {
-            if (i % 2 == 0)
-            System.out.println(arr[i]);
+        do {
+            System.out.print("Enter a number: ");
+            number = scanner.nextInt();
+
+            if (number >= 0) {
+                System.out.println("You entered: " + number);
+            }
+
+        } while (number >= 0);
+
+        System.out.println("Negative number detected. Program stopped! ");
+        scanner.close();
+
         }
-
-
-        }
-
 
     }
+
+
 
