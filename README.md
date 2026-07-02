@@ -6,9 +6,9 @@ This repository documents my journey of learning Java from the ground up and bui
 
 ## About me 
 Hiii, I'm Priyanshu Saxena
-Coming from a B.Com background, transitioning into IT was a significant leap for me. To 
-bridge the gap, I am currently dedicating 11 hours every single day to mastering Java,
-Spring Boot, and Backend technologies.
+I am transitioning from a B.Com background into IT. To 
+bridge the gap, I follow a disciplined daily routine. My complete 
+focus is on mastering Java, Spring Boot, and backend technologies.
 
 This repository is a live record of my dedication. I practice, commit, and push code daily—covering 
 everything from Java Basics to Java 8 features. Alongside my development journey, I am also 
