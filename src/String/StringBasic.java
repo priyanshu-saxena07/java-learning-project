@@ -2,17 +2,16 @@ package String;
 
 public class StringBasic {
     public static void main(String[] args) {
+        //  Reverse a String without Built-in API
+        String str = "Noida";
+        String reverse = "";
 
-        String s = " hello";
-        StringBuilder sb = new StringBuilder();
+        for (int i = str.length()- 1; i >= 0; i--) {
+            reverse = reverse + str.charAt(i);
 
-        for (int i = s.length() - 1; i >=  0; i--) {
-            char ch = s.charAt(i);
-
-
-            sb.append(ch);
         }
-        System.out.println("Reversed String " + sb);
+        System.out.println(reverse);
+
 
 
     }
