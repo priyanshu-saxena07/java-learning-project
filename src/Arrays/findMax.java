@@ -2,19 +2,16 @@ package Arrays;
 
 public class findMax {
     public static void main(String[] args) {
-        int[] arr = {10, 5, 20, 8};
-
-        int max = Integer.MIN_VALUE;
+        int[] arr = {10, 5, 20, 55, 80};
+          int max = Integer.MIN_VALUE;
         int secondMax = Integer.MIN_VALUE;
 
-        for(int i = 0; i < arr.length; i++) {
-
-            if(arr[i] > max) {
+        for (int num : arr) {
+            if (num > max) {
                 secondMax = max;
-                max = arr[i];
-            }
-            else if(arr[i] > secondMax && arr[i] != max) {
-                secondMax = arr[i];
+                max = num;
+            } else if (num > secondMax && num != max) {
+                secondMax = num;
             }
         }
 
@@ -23,6 +20,5 @@ public class findMax {
     }
 
 
-
-
 }
+
