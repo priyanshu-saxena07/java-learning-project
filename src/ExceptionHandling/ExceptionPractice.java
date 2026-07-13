@@ -1,23 +1,31 @@
 package ExceptionHandling;
 
 public class ExceptionPractice {
-    @SuppressWarnings("DataFlowIssue")
-    public static void main(String[] args) {
+     public static void main(String[] args) {
+
+         int[] numbers = {10, 20, 30};
 
 
-        String text = null;
+         int divisor = 0;
+         int index = 2;
 
-        try {
-            System.out.println(text.toUpperCase());
-            System.out.println("Program finished successfully!");
-        } catch (NullPointerException e) {
-            System.out.println("Error: Object is null!");
-        }
+         try {
+             int result = numbers[index] / divisor;
+             System.out.println("Result: " + result);
+             System.out.println("Program finished successfully!");
+         }  catch (ArithmeticException e) {
+             System.out.println("Exception catch");
+         } catch (ArrayIndexOutOfBoundsException e) {
+             System.out.println();
+         }
 
 
 
 
-    }
+
+
+
+     }
 }
 
 
