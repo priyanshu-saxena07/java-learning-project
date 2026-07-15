@@ -1,84 +1,35 @@
 # Java Learning Project ☕
 
-This repository documents my journey of learning Java from the ground up and building a strong foundation for backend development.
+My daily practice log — building strong Core Java fundamentals 
+before diving deeper into backend development.
 
----
+## 📚 What This Repo Covers
+* **Java Basics:** Variables, data types, operators, and control statements.
+* **OOPs Concepts:** Classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
+* **Collections Framework:** List, Set, Map, and their real-world use cases.
+* **Exception Handling:** Writing safer, fault-tolerant code.
+* **Java 8 Features:** Streams, Lambda expressions, and Functional Interfaces.
 
-## About me 
-Hiii, I'm Priyanshu Saxena
-I am transitioning from a B.Com background into IT. To 
-bridge the gap, I follow a disciplined daily routine. My complete 
-focus is on mastering Java, Spring Boot, and backend technologies.
-
-This repository is a live record of my dedication. I practice, commit, and push code daily—covering 
-everything from Java Basics to Java 8 features. Alongside my development journey, I am also 
-consistently solving DSA (Data Structures & Algorithms) problems to sharpen my problem-solving skills.
-
-For me, this repo isn't just about code—it's proof of my daily consistency and 
-my commitment to becoming a skilled Software Developer.
-
-
-## 📌 About This Project
-
-I established this repository to build an unshakeable foundation in software engineering through 
-disciplined, daily coding practice. While I initially leveraged structured technical roadmaps and 
-community tutorials to guide my learning path, every single
-implementation here is coded independently from scratch.
-
-Now, I use this repo as my personal playground where I daily practice everything from 
-Java Basics to Java 8 features. Coming from a non-technical background, I am fully focused on 
-mastering core concepts through hands-on coding before moving to advanced backend development.
-
-This is not just a collection of code—it reflects my daily grind, my learning process, 
-and my gradual improvement over time.
-
----
-
-## 🚀 What I’m Currently Learning
-
-* Java (Core + Java 8)
-* Spring Boot (beginner level)
-* Spring Security (basics)
-* MySQL (starting soon)
-* Data Structures & Algorithms (DSA)
-
----
-
-## 📚 Topics Covered So Far
-
-* Java Basics (variables, data types, operators)
-* Control Statements (if-else, loops)
-* Object-Oriented Programming (OOP)
-* Collections Framework
-* Exception Handling
-* Java 8 Features (Streams, Lambda expressions)
-
----
+## 🚀 Currently Learning
+* **Core Java:** Daily hands-on practice, diving deeper into advanced Java 8 concepts.
+* **Spring Boot & Spring Security:** Actively building a dedicated backend project — see [spring-boot-project](https://github.com/priyanshu-saxena07/spring-boot-project).
+* **MySQL:** Integrating database concepts hands-on through the same project.
 
 ## 🎯 Purpose of This Repository
-
-* To build strong Java fundamentals
-* To maintain consistency through daily practice
-* To prepare for backend development using Spring Boot
-* To track my learning journey in a structured way
-
----
+* Build strong, interview-ready Java fundamentals.
+* Lay the groundwork for advanced backend development.
 
 ## 🛠️ Future Plans
+- [ ] Expand Java 8 practice with real-world examples.
+- [ ] Solve DSA problems on the side to keep problem-solving skills sharp.
+- [ ] Improve code structure and follow industry best practices.
+- [ ] Keep growing backend skills through my Spring Boot project.
 
-* Add more Java 8 practice examples
-* Start integrating MySQL with Java
-* Build a backend projects using Spring Boot and Rest API,
-* Improve code structure and best practices
-
----
-
-## 📈 Progress
-
-I update this repository regularly as I learn and practice new concepts.
-Consistency and improvement are my main focus.
-
----
+## 📌 Professional Profile
+* **Background:** B.Com graduate transitioning into an enterprise-level Backend Developer.
+* **Commitment:** Dedicating several hours daily to mastering Java and backend fundamentals.
+* **My Goal:** Proving that consistency and disciplined self-learning can successfully bridge a non-IT background into a solid technical foundation.
+* **Philosophy:** Understanding concepts deeply through hands-on coding, not copy-pasted tutorial blocks.
 
 ## 🤝 Connect With Me
 
@@ -88,9 +39,6 @@ Consistency and improvement are my main focus.
 
 ## ⚡ Note
 This repository is part of my learning journey.
-I am continuously improving and working towards becoming a backend developer.
-
-
 I am continuously improving and working towards becoming a backend developer.
 
 ---
