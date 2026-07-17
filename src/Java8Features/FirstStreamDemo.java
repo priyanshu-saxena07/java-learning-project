@@ -1,25 +1,24 @@
 package Java8Features;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
+import java.util.*;
 
 public class FirstStreamDemo {
     public static void main(String[] args) {
 
-        List<Integer> list = Arrays.asList(1, 2, 3, 2, 4, 3, 5);
+        List<Integer> numbers = Arrays.asList(10, 20, 30, 20, 40, 10, 50, 70, 88, 40);
 
-        // Filter and collect into a list
+        Optional<Integer> secondHighest = numbers.stream()
+                .distinct()                           // Removes duplicates
+                .sorted(Comparator.reverseOrder())    // Sorts descending
+                .skip(1)                              // Skips the highest
+                .findFirst();                       // Fetches the immediate next element
 
-        Set<Integer> duplicates = list.stream()
-                .filter(n -> Collections.frequency(list, n) > 1)
-                .collect(Collectors.toSet());
-        System.out.println(duplicates);
 
+        secondHighest.ifPresent(val -> System.out.println("Second highest number is: " + val));
 
 
     }
 
  }
+
+
