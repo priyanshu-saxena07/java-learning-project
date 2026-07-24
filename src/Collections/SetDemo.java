@@ -1,17 +1,15 @@
 package Collections;
 
-import java.util.HashSet;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class SetDemo {
+    @SuppressWarnings("DuplicateSetElement")
     public static void main(String[] args) {
-       Set<String> roles = new HashSet<>();
-       roles.add("ADDMIN");
-       roles.add("USER");
-       roles.add("MANAGER");
-       roles.add("MANAGER");
+        Set<String> fruits = new LinkedHashSet<>(Arrays.asList("Apple", "Banana", "Orange", "Apple"));
 
-       for (String role : roles)
-           System.out.println("ROLE; " + role);
+        System.out.println("Fruits in LinkedHashSet: " + fruits);
+        System.out.println("Is Banana in the set? " + fruits.contains("Banana"));
     }
 }
