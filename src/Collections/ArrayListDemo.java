@@ -2,16 +2,35 @@ package Collections;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedHashSet;
 import java.util.List;
 
 public class ArrayListDemo {
     public static void main(String[] args) {
 
-        List<String> names = new ArrayList<>(Arrays.asList("Amit", "Rahul", "Amit", "Priyanshu"));
+        List<Integer> numbers = new ArrayList<>(Arrays.asList(12, 35, 1, 10, 34, 1));
 
-        List<String> uniqueNames = new ArrayList<>(new LinkedHashSet<>(names));
-        System.out.println(uniqueNames);
+        if (numbers.size() < 2) {
+            System.out.println("Invalid Input");
+            return;
+        }
+
+        int highest = Integer.MIN_VALUE;
+        int secondHighest = Integer.MIN_VALUE;
+
+        for (int num : numbers) {
+            if (num > highest) {
+                secondHighest = highest;
+                highest = num;
+            } else if (num > secondHighest && num != highest) {
+                secondHighest = num;
+            }
+        }
+
+
+        System.out.println("Second Highest: " + secondHighest);
 
     }
-}
+    }
+
+
+
