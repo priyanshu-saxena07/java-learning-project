@@ -1,20 +1,26 @@
 package Basic;
 
+import java.util.Scanner;
+
 public class variables {
     public static void main(String[] args) {
 
-        String name = "Priyanshu";
-        int age = 23;
-        String Language = "Java";
-        System.out.println(name + " " + age + " " + Language );
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int x = scanner.nextInt(); // Value is now dynamic
 
-        // Constants
-        int Constant_Value = 5;
-
-
-
-
+        if (x > 20) {
+            if (x < 25) {
+                System.out.println("Correct");
+            } else {
+                System.out.println("Incorrect");
+            }
+        }
+        System.out.println(x);
+        scanner.close();
 
 
     }
 }
+
+
